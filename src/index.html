@@ -11,39 +11,39 @@
     <title>Decodificador</title>
 </head>
 <body>
+    <main class="main container">
+        <header class="cabecalho">
+          <img src="./img/logo-alura.png" alt="logo alura">
+          <h1>Mensagens Codificadas</h1>
+        </header>
+        <div class="container-input">
+        <div class="input">
+           <textarea  id="input-texto" placeholder="Digite seu texto aqui..."></textarea>
+           <p>ATENÇÃO: Apenas letras maiusculas e sem acento!</p>
+       </div>
 
-    <header>
-        <img src="./img/logo-alura.png" alt="Logo Alura" class="logo">
-    </header>
 
-    <main>
+        <div id="output">
+           <img src="./img/pinguim.png" alt="pinguim" height="330px" width="300px">
+           <h2>Sua mensagem aparecerá aqui!</h2>
+           <span>Digite um texto que deseja criptografar ou descriptografar.</span>
+        </div>
+       </div>
 
-        <section>
-            <textarea class="input" placeholder=" Digite seu texto "></textarea>
-            <div class="alert">
-               <p id="aviso">Apenas letras minúsculas e sem acento.</p>
+       
+        <div class="buttons">
+            <div class="container-bnt">
+               <button  onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+               <button  onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
             </div>
-          
-            
-            <div class="botoes">
-                <button class="criptografar">Criptografar</button>
-                <button class="descriptografar">Descriptografar</button>
-            </div>
-        </section>
-
-        <section>
-            <div id="segundaarea">
-                <textarea class="mensagem"></textarea>
-                <button class="copiar">Copiar</button>
-            </div>
-        </section>
-        
+           
+        </div>
     </main>
     
-    <script src="js/app.js"></script>
-
-    <footer>
+       <footer class="rodape">
         <p>Desenvolvido por Erica Lima e Silva 💖</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
